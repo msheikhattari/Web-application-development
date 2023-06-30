@@ -1,0 +1,16 @@
+{
+  "name": "summercamp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "summerCampServer.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "*",
+    "express": "*",
+    "mongodb": "*"
+  }
+}

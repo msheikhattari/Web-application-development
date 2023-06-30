@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Photo Viewer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src = "code.js"> "use strict";</script>
+</head>
+
+<body>
+    <div id = "outerBorder">
+    <div id = "innerBorder">
+    <h1><u>Photo Viewer</u></h1>
+    <div id = "image">
+    <img src = "InitialImage.jpg"></div>
+    <fieldset class = "container">
+        <legend><strong>Loading data</strong></legend>
+        <form>
+            Photos' Folder: <input type = "text" id = "folder" value = "umcp/">
+            Common Name: <input type = "text" id = "common" value = "college"><br>
+            Start Photo Number: <input type = "text" id = "start" value = 2>
+            End Photo Number: <input type = "text" id = "end" value = 4><br>
+            <input type = "button" value = "Load Photos" id = "load">
+        </form>
+    </fieldset>
+    <fieldset class = "container">
+        <legend><strong>Iterating</strong></legend>
+        <form>
+            <input type = "button" value = "Previous Photo" id = "previous">
+            <input type = "button" value = "Next Photo" id = "next">
+            <input type = "button" value = "First Photo" id = "first">
+            <input type = "button" value = "Last Photo" id = "last">
+        </form>
+    </fieldset>
+    <fieldset class = "container">
+        <legend><strong>SlideShows</strong></legend>
+        <form>
+        <input type = "button" value = "SlideShow" id = "slideshow">
+        <input type = "button" value = "RandomSlideShow" id = "random">
+        <input type = "button" value = "StopSlideShow" id = "stop">
+        </form>
+    </fieldset>
+    <fieldset class = "container">
+        <legend><strong>Status</strong></legend>
+        <form>
+            Photo Being Displayed: <input type = "button" value = "InitialImage.jpg" disabled id = "imgDisplay">
+        </form>
+        <div id = "status">
+        <p>Photo Viewer System</p>
+        </div>
+    </fieldset>
+
+    </div>
+    </div>
+    
+</body>
+
+
+</html>

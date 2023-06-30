@@ -1,0 +1,31 @@
+<!-- You write the code for the summer camp here -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Terp Store</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+    <div class = "containerTop">
+        <div id = "headingBackgroundIndex">
+            <h1>
+                <u> Terp Store </u>
+            </h1> 
+        </div>   
+        <nav>
+            <ul>
+                <li><a href = "catalogInquiry.shtml">Catalog Inquiry</a></li>
+                <li><a href = "placingOrder.shtml">Placing Order</a></li>
+            </ul>
+        </nav>
+        <div class = "containerBottom">
+            <!--#include virtual="footer.shtml" -->
+        </div>
+    </div>
+</body>
+
+</html>

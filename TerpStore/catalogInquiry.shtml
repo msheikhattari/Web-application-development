@@ -1,0 +1,55 @@
+<!-- You write the code for the summer camp here -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Catalog Inquiry</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class = "containerTop">
+        <div id = "headingBackgroundCatalog">
+            <h1>
+                <u>Catalog Inquiry</u>
+            </h1>
+        </div>
+
+        <div class = "containerForm">
+            <form action="http://npp.cs.umd.edu/cmsc335/projects/TerpStore/catalogInquiry.php" method="get">
+                <u>Item Category</u><input list="item-options" name="item-choice" autofocus class ="highlight" required>
+                <br><br>
+                <datalist id="item-options">
+                    <option value="clothes">
+                    <option value="books">
+                    <option value="music">
+                    <option value="food">
+                    <option value="other">    
+                </datalist>
+            
+                <u>Maximum Cost ($)</u><input name="maximumCost" type="number" min="1" max="1000" step="5" value="1" class ="highlight">
+                <br>
+                
+                <input name = "availableOnCampus" type="checkbox"><u>Available on Campus</u><br>
+                <input name = "availableOnline" type="checkbox" checked="checked"><u>Available Online</u><br>
+                <u>Additional Information</u><br>
+                <textarea rows="10" cols="70" name="info"></textarea><br>
+                <u>Contact Email Address:</u><input type = "email" name = "email" placeholder="example@terpmail.umd.edu" class = "highlight"><br>
+
+
+                <input type="submit" value="Submit Inquiry" class = "double">
+                <input type = "reset" value = "Clear" class = "double">
+            </form>
+        </div>
+
+        <div class = "containerBottom">
+            <!--#include virtual="footer.shtml" -->
+        </div>
+    </div>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang = "en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Research Form</title>
+    <link rel="stylesheet" href="research.css">
+    <script src = "code.js"></script>
+</head>
+
+<body>
+    <h1><u>Research Form</u></h1>
+    <form action = "researchProcessing.php" method = "get" onsubmit = "return submitIt()">
+        <fieldset>
+            <legend><strong><em>General Information</em></strong></legend>
+
+            Firstname: 
+            <input type = "text" required name = "firstname">
+            Lastname: 
+            <input type = "text" required name = "lastname">
+            <br><br>
+            Phone: 
+            <input type = "text" class = "phone" required name = "phoneFirstPart" id = "phoneFirstPart"> - <input type = "text" class = "phone" required name = "phoneSecondPart" id = "phoneSecondPart"> - <input type = "text" class = "phone" required name = "phoneThirdPart" id = "phoneThirdPart">
+            Email:
+            <input type = "email" class = "email" name = "email">
+        </fieldset>
+
+        <fieldset>
+            <legend><strong><i>Research Study Data</i></strong></legend>
+
+            <fieldset> 
+                <legend><strong>Age/Height/Weight</strong></legend>
+                <strong>Age: </strong>
+                <input type = "number" min = "1" max = "125" name = "age"> 
+                <span class = "tab"></span>
+                <strong>Height: </strong>
+                <input type = "number" min = "2" max = "7" name = "heightFeet">
+                <em>Feet</em>
+                <input type = "number" min = "0" max = "11" name = "heightInches">
+                <em>Inches</em>
+                <span class = "tab"></span>
+                <strong>Weight:</strong>
+                <input type = "number" min = "1" max = "600" name = "weight">
+                <em>Pounds</em>            
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>Conditions</strong></legend>
+
+                Which of the following conditions are present in your family? (Check all that apply)<br>
+                <input type = "checkbox" name = "highBloodPressure" id = "highBloodPressure" value = "HighBloodPressure"> High Blood Pressure
+                <input type = "checkbox" name = "diabetes" id = "diabetes" value = "Diabetes"> Diabetes
+                <input type = "checkbox" name = "glaucoma" id = "glaucoma" value = "Glaucoma"> Glaucoma
+                <input type = "checkbox" name = "asthma" id = "asthma" value = "Asthma"> Asthma
+                <input type = "checkbox" name = "none" id = "none" value = "None"> None
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>Time Period</strong></legend>
+
+                How long have you experienced any of the above conditions?<br>
+                <input type = "radio" name = "period" id = "never" value = "Never">Never
+                <input type = "radio" name = "period" id = "less" value = "LessThanAYear">Less than a year
+                <input type = "radio" name = "period" id = "ott" value = "OneToTwoYears">One to two years
+                <input type = "radio" name = "period" id = "more" value = "MoreThanTwoYears">More than two years
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>Study Information</strong></legend>
+
+                Which study are you taking part of?
+                <select id="studyType" name = "studyType">
+                    <option value="Long Term">Long Term</option>
+                    <option value="Short Term">Short Term</option>
+                </select>
+                Assigned Study Id: 
+                <input type = "text" placeholder = "A777" class = "study" required name = "firstFourDigits" id = "firstFourDigits">-<input type = "text" placeholder = "B888" class = "study" required name = "secondFourDigits" id = "secondFourDigits">
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>Additional Information (Comments)</strong></legend>
+                <textarea rows="5" cols="80" name="comments"></textarea><br>
+            </fieldset>
+        </fieldset>
+
+        <fieldset>
+            <input type = "reset" value = "Clear Form">
+            <input type="submit" value="Submit Information">      
+        </fieldset>
+    </form>
+    <div>
+        CMSC Research Institute &copy;
+    </div>
+</body>

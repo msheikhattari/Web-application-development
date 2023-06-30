@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif
+}
+
+fieldset{
+    border-radius: 10px;
+    margin: 10px
+}
+
+legend {
+    color: #A0522D
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.phone{
+    width : 40px;
+}
+
+.email {
+    width: 300px
+}
+
+.study {
+    width: 35px
+}
+
+h1 {
+    text-shadow: 5px 5px 5px silver;
+    width:250px
+}
+
+div {
+    border-top: double;
+    border-bottom: double;
+    text-align: center
+}

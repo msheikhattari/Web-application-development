@@ -1,0 +1,19 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    background-image: url("allah.jpg");
+    background-size: 85rem;
+    font-size: 3rem;
+    font-family: 'SuranNa';
+}
+
+.border, .border th, .border td
+{
+    border: .07rem solid black
+}
+
+table{
+    background-color: white;
+}

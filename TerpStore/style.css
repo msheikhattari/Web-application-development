@@ -1,0 +1,158 @@
+/* You implement */
+
+html{
+    font-family: sans-serif
+}
+
+* {
+    /* Important: to better understanding positioning, 
+       we are setting the padding and margin of all 
+       elements to zero */
+    margin: 0px;
+    padding: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+h1 {
+    color: azure;
+    font-size: 83px;
+    z-index: 1;
+    position: relative;
+    top: -14px;
+}
+
+#headingBackgroundIndex {
+    background: rgba(0,0,0, 0.4);
+    width: 429px;
+    height: 80px;
+    position: relative;
+    top: 10px;
+    left: 20px
+}
+
+#headingBackgroundCatalog {
+    background: rgba(0,0,0, 0.4);
+    width: 650px;
+    height: 80px;
+    position: relative;
+    top: 10px;
+    left: 20px
+}
+
+#headingBackgroundOrder {
+    background: rgba(0,0,0, 0.4);
+    width: 570px;
+    height: 80px;
+    position: relative;
+    top: 10px;
+    left: 20px
+}
+
+
+.containerTop{
+    background-image: url(images/JimHenson.jpg);
+    background-size: 1850px;
+    border-style: solid;
+    border-color: green;
+    border-width: 0.75rem;
+    width: 92rem;
+    height: 75rem;
+    position: relative;
+    
+}
+
+.containerBottom{
+    background-color: lightblue;
+    border-left: 1rem;
+    z-index: 1;
+    position: absolute;
+    top: 1080px;
+    right: 2px;
+    width: 1470px;
+    height: 120px;
+    
+}
+
+form {
+    font-size: 30px
+}
+
+.containerForm{
+    background-color: rgba(255,255,255,0.85);
+    border-color: azure;
+    border-style:solid;
+    border-width: 10px;
+    position: absolute;
+    top: 180px;
+    left: 80px
+}
+
+footer {
+    font-size: 40px;
+    border-width: 70px;
+    background-color: red;
+    border-style: ridge;
+    border-color: lightgray;
+    border-width: 17px;
+    font-style: italic;
+    height: 70px;
+    top: -10px;
+    text-align: center
+}
+
+a {
+    color: brown
+}
+
+a:hover {
+    font-size: 14px
+}
+
+a:visited{
+    color: beige
+}
+
+nav{
+	float: left; 
+    display: block;
+    position: relative;
+    top: 400px;
+    left: 520px;
+    background-color: rgb(211,211,211, 0.8);
+    border: 2px solid black;
+    width: 450px;
+    height:90px;
+}
+
+nav ul {
+    list-style-type: none;
+    font-size: 40px;
+    position: relative;
+    top: -25px;
+    left: 75px;
+    
+}
+
+#links{
+    margin-right: 5px;
+    list-style-type: none;
+    font-size: 30px;
+    color: brown
+}
+
+.double {
+    border-style: double;
+    border-radius: 10px; 
+    border-width: 4px
+}
+
+.highlight{
+    border-color: red;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.highlight.cc{
+    width : 40px;
+}

@@ -1,0 +1,40 @@
+<!-- You write the code for the summer camp here -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Placing Order</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class = "containerTop">
+        <div id = "headingBackgroundOrder">
+            <h1>
+                <u>Placing Order</u>
+            </h1>
+        </div>
+
+        
+            <!-- Make sure you require the required elements-->
+        <div class = "containerForm">
+            <form action="processing/placingOrder.php" method="post">
+                <u>Item Serial #</u><input placeholder="umd-item-0000" name="serialNumber" autofocus class = "highlight" required><br><br>
+                <u>Credit Card #</u><input name = "cc1" class = "highlight cc" required maxlength="4"> - <input name = "cc2" class = "highlight cc" required maxlength="4"> - <input name = "cc3" class = "highlight cc" required maxlength="4"> - <input name = "cc4" class = "highlight cc" required maxlength="4"><br><br>
+                <u>Shipping Address</u><input name = "shipping" maxlength="80" class = "highlight" required><br><br>
+                <u>Contact Email Address:</u><input type = "email" name = "email" placeholder="example@terpmail.umd.edu" class = "highlight"><br><br>
+                <input type="submit" value="Submit Order" class = "double">
+                <input type = "reset" value = "Clear" class = "double">
+            </form>
+        </div>
+        <div class = "containerBottom">
+            <!--#include virtual="footer.shtml" -->
+        </div>
+    </div>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,108 @@
+/* Do not remove this rule */
+
+html {
+    font-size: 14px;
+}
+
+head {
+    border-style: double;
+    border-color: black
+}
+
+body {
+	font-family: serif;
+	width: 70rem;  /* Try 25, 50 */
+	height: 84rem;  /* Try 75, 50 */
+	border-style: double;
+	border-color: brown; 
+    background-color: antiquewhite;
+    border-width: 0.75rem;
+    padding: .75rem;  /*Change to 0 em, 1 ... 6 em */
+    padding-bottom: 2rem;
+    margin: 5rem;  /* Change to 0 em, 1 ... 6 em */
+    margin-left: 2rem;
+    margin-top: 2rem;
+} 
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.4rem;
+    color: brown;
+    padding-right: 6rem;
+}
+
+
+p::first-letter{
+    font-size: 300%;
+    font-weight: bold;
+}
+
+table {
+    font-size: 1.4rem;
+    font-weight:normal;
+}
+
+caption{
+    color: blue
+}
+
+th{
+    color:brown;
+    background-color: antiquewhite;
+}
+
+.border, .border th, .border td
+{
+    border: .07rem solid black
+}
+
+#innerBorder {
+    border-style: ridge;
+	border-color: blue; 
+    border-width: 1rem;
+    background-color: white;
+    padding: 3rem;
+    padding-top: 6.5rem;
+    padding-bottom: 5rem
+}
+
+#outside {
+    background-color: black;
+}
+
+#additionalInfo{
+    color: brown;
+    font-size:1.4rem;
+    font-family: serif
+}
+
+.footer {
+    font-size: 1.4rem;
+    font-family: serif
+}
+
+.schedule{
+    color: blue;
+    font-size:1.4rem
+}
+
+ol {
+    font-size:1.3rem;
+    font-weight:normal;
+
+}
+
+div{
+    padding: 1rem;
+}
+
+p:hover {
+    color: red
+}
